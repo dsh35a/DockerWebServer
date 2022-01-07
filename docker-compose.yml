@@ -1,0 +1,11 @@
+version: '3'
+services:
+        nginx-cont1:
+                image: "nginx:latest"
+                ports: - "90:80"
+        jenkins-cont2:
+                image: "jenkins:latest"
+                ports: - "8080:8080"
+        dsh-cont3:
+                image: "dsh35a/web_repo"
+                ports: - "100:80"
